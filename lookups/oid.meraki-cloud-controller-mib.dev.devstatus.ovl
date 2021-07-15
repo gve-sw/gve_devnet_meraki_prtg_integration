@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+  <ValueLookup id="oid.meraki-cloud-controller-mib.dev.devstatus" desiredValue="1" undefinedState="Error">
+    <Lookups>
+      <SingleInt state="Error" value="0">
+        offline
+      </SingleInt>
+      <SingleInt state="Ok" value="1">
+        online
+      </SingleInt>
+    </Lookups>
+  </ValueLookup>

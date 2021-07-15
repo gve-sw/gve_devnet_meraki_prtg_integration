@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <ValueLookup id="prtg.customlookups.singleint.alert" desiredValue="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="PaeValueLookup.xsd">
+    <Lookups>
+      <SingleInt state="Error" value="0">
+        Critical
+      </SingleInt>
+      <SingleInt state="Warning" value="1">
+        Warning
+      </SingleInt>
+      <SingleInt state="Ok" value="2">
+        Informational
+      </SingleInt>
+    </Lookups>
+  </ValueLookup>

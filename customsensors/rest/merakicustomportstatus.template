@@ -1,0 +1,42 @@
+{
+  "prtg": {
+    "description" : {
+      "device": "REST port status template",
+      "query": "/devices/SERIAL_NUMBER/switch/ports/statuses",
+      "comment": "You need to replace SERIAL_NUMBER in the REST Query field in PRTG"
+    },
+    "result": [
+      {
+        "channel": "Port Enabled",
+        "unit":"Custom",
+        "ValueLookup": "prtg.standardlookups.boolean.statetrueok",
+        "value": $[Add here port number].enabled
+      },
+      {
+        "channel": "Status",
+        "unit":"Custom",
+        "ValueLookup": "prtg.customlookups.singleint",
+        "value": lookup($[Add here port number].status, "Disabled", "Disconnected", "Connected")
+      },
+      {
+        "channel": "Usage Total",
+        "unit":"Custom",
+        "CustomUnit": "KiloByte",
+        "value": $[Add here port number].usageInKb.total
+      },
+      {
+        "channel": "Traffic Sent",
+        "unit":"Custom",
+        "CustomUnit": "KiloByte",
+        "float":"1",
+        "value": $[Add here port number].trafficInKbps.sent
+      },
+      {
+        "channel": "Client Count",
+        "unit":"Custom",
+        "CustomUnit": "Clients",
+        "value": $[Add here port number].clientCount
+      }
+    ]
+  }
+}
