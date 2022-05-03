@@ -65,15 +65,7 @@ Via CLI e.g. Terminal(MAC) or Git Bash(Windows):
     cd [preferred path] 
     ```
 
-2.	Create and activate a virtual environment for the project
-    ```python
-    #WINDOWS:
-    py -3 -m venv [add name of virtual environment here] 
-    source [add name of virtual environment here]/Scripts/activate
-    #MAC:
-    python3 -m venv [add name of virtual environment here] 
-    source [add name of virtual environment here]/bin/activate
-    ```
+2.	Create and activate a virtual environment for the project ([Instructions](https://docs.python.org/3/tutorial/venv.html)).
 
 3. Access the created virtual environment folder
     ```python
